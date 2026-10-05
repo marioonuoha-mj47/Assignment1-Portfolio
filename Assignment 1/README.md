@@ -32,12 +32,11 @@ Gradients used in:
 
 #
 Used code from the slides Week1-Week3 
-For the css design half of the code came from the slides from lectrus the other came from this vdeo 
-this video where I watched and implemented things Ive learned form it...
+For the CSS design, half of the code came from the slides from lectures; the other half came from this video. This is the video I watched and implemented things I've learned from it...
 https://www.youtube.com/watch?v=wRNinF7YQqQ
 
 #GitHub Pages Link
 Live Site: https://yourusername.github.io/portfolio-site/
 
 ##  Repository Link
-Repo: https://github.com/marioonuoha-mj47/portfolio-site
+Repo: [https://github.com/marioonuoha-mj47/portfolio-site](https://github.com/marioonuoha-mj47/Assignment1-Portfolio)
