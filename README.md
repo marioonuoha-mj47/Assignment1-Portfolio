@@ -30,4 +30,4 @@ Used code from the slides Week1-Week3 For the CSS design, half of the code came 
 #GitHub Pages Link Live Site: https://yourusername.github.io/portfolio-site/
 
 Repository Link
-Repo: [https://github.com/marioonuoha-mj47/portfolio-site](https://github.com/marioonuoha-mj47/Assignment1-Portfolio)
+Repo: https://github.com/marioonuoha-mj47/Assignment1-Portfolio
