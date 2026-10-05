@@ -39,4 +39,4 @@ https://www.youtube.com/watch?v=wRNinF7YQqQ
 Live Site: https://yourusername.github.io/portfolio-site/
 
 ##  Repository Link
-Repo: [https://github.com/marioonuoha-mj47/portfolio-site](https://github.com/marioonuoha-mj47/Assignment1-Portfolio)
+Repo: https://github.com/marioonuoha-mj47/Assignment1-Portfolio
