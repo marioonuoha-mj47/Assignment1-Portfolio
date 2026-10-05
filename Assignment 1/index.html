@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- This links the main stylesheet for desktop screens. -->
+    <link rel="stylesheet" href="full.css" media="only screen and (min-width: 960px)">
+
+    <!-- This links the tablet version of the stylesheet for medium screens. -->
+    <link rel="stylesheet" href="tablet.css" media="only screen and (min-width: 481px) and (max-width: 959px)">
+
+    <!-- This links the mobile version for small screens. -->
+    <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 480px)">
+</head>
+
+<body>
+    <!-- This is the main container for the whole page. -->
+    <div id="wrapper">
+
+        <!-- This is the top header area where the main page title goes. -->
+        <header id="banner">
+            <h1>Welcome to My All about me page</h1>
+        </header>
+
+        <!-- This is the left-side navigation menu. -->
+        <nav id="leftnav" aria-label="Main navigation">
+            <h3>Links...</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- This is the main section where the actual page content goes. -->
+        <main>
+            <article id="right-content-area">
+                <h2>My passions</h2>
+                <p>This page is to display my interests and what I love doing.</p>
+
+                <!-- This section holds the little boxes that act like content tiles. -->
+                <section>
+                    <img class="box" id="box1" src="1-e3f91a08.png" alt="Fortnite game artwork">
+                    <img class="box" id="box2" src="2-e3f91a08.png" alt="TikTok logo on a phone">
+                    <img class="box" id="box3" src="3-e3f91a08.png" alt="LeBron James holding a basketball">
+                    <img class="box" id="box4" src="4-e3f91a08.png" alt="Neymar playing soccer">
+                    
+                </section>
+            </article>
+        </main>
+
+        <!-- This just clears any float styling so the footer sits below properly. -->
+        <div class="clear"></div>
+
+        <!-- This is the footer with the copyright text. -->
+        <footer id="footer">
+            <p>Copyright &copy; 2026 Mario's Portfolio</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* This is the tablet stylesheet. */
+/* It keeps the same colours and overall look as the desktop version, */
+/* but it stacks the layout better on medium-size screens. */
+
+body {
+    margin: 0;
+    padding: 12px;
+    background: linear-gradient(180deg, #111111 0%, #1b1b1d 100%);
+    font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+/* Center the page and limit its width on tablet-sized screens. */
+#wrapper {
+    width: 94%;
+    max-width: 960px;
+    margin: 16px auto;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #f4f1ee;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+#banner {
+    background: linear-gradient(135deg, #8b7b76 0%, #5e4f4d 100%);
+    padding: 22px 18px;
+}
+
+#banner h1 {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Keep the navigation full-width above the page content. */
+#leftnav {
+    width: 100%;
+    background: #2d2a2d;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 18px;
+}
+
+#leftnav h3 {
+    margin: 0 0 12px 0;
+    color: #f5efe9;
+    font-size: 1.1em;
+}
+
+#leftnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#leftnav li {
+    margin: 10px 0;
+}
+
+#leftnav a {
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    color: #f6f1ee;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+#leftnav a:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Let the main content use the available tablet width. */
+main {
+    width: 100%;
+    background: #f8f5f2;
+    padding: 18px;
+}
+
+#right-content-area {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2c2a2a;
+    margin: 0 0 12px 0;
+}
+
+p, li {
+    color: #383838;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* Arrange the content cards in multiple columns when space allows. */
+.box {
+    flex: 1 1 42%;
+    max-width: 180px;
+    height: 160px;
+    object-fit: cover;
+    background: linear-gradient(180deg, #d8b590 0%, #b88d64 100%);
+    border-radius: 12px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Keep forms and their fields within the content column. */
+form {
+    background: #f9f7f4;
+    border: 1px solid #e5ddd5;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d7c9bf;
+    border-radius: 10px;
+    margin-top: 6px;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 9px 18px;
+    background: linear-gradient(180deg, #7d6c63 0%, #5f514d 100%);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#footer {
+    background: #453d3d;
+    color: #f4f4f4;
+    padding: 16px 18px;
+}
+
+#footer p {
+    margin: 0;
+    color: #f4f4f4;
+}
+
+/* Clear any floats before the footer. */
+.clear {
+    clear: both;
+}
+
+.comment,
+.helper-text,
+.instructions,
+.notes,
+.placeholder-text,
+.note,
+.explanation,
+.hidden-text {
+    display: none !important;
+}

@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* CSS Document */
+/* This is the main desktop stylesheet for the portfolio site. */
+/* Basically, it gives the whole site its layout, colors, spacing, and overall look. */
+/* It keeps things clean and modern, but still uses the same Verdana-style vibe. */
+
+* {
+    box-sizing: border-box;
+    /* This makes the padding and border count inside the width and height, so things don't overflow weirdly. */
+}
+
+/* This sets the background and general text styling for the whole page. */
+body {
+    background: linear-gradient(180deg, #111111 0%, #1b1b1d 100%);
+    /* Dark gradient background so the page feels a bit more modern and polished. */
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    /* Same font vibe as before so it stays consistent with the original styling. */
+    margin: 0;
+    padding: 0;
+    color: #1f1f1f;
+}
+
+/* This is the main container that holds the whole page together. */
+#wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #f4f1ee;
+    border: 1px solid #d9d0c7;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-wrap: wrap;
+    /* This is just a neat way to lay out the header, nav, and main content in a flexible layout. */
+}
+
+/* This is the top banner area. */
+#banner {
+    width: 100%;
+    background: linear-gradient(135deg, #8b7b76 0%, #5e4f4d 100%);
+    border-bottom: 3px solid #d9c3a2;
+    padding: 30px 24px;
+    display: flex;
+    align-items: center;
+    /* This keeps the title vertically centred and gives the header a nice warm colour theme. */
+}
+
+#banner h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.4em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    /* This makes the heading stand out and look a bit more premium. */
+}
+
+/* This is the left sidebar navigation area. */
+#leftnav {
+    width: 260px;
+    background: #2d2a2d;
+    color: #f4f4f4;
+    padding: 24px 18px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    /* Dark side panel so it contrasts nicely with the main content area. */
+}
+
+#leftnav h3 {
+    margin-top: 0;
+    color: #f5efe9;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    /* This just makes the label look a little cleaner and more readable. */
+}
+
+#leftnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Removes the default bullet points and resets the spacing. */
+}
+
+#leftnav li {
+    margin: 12px 0;
+    /* Adds a bit of space between the nav items so it looks less cramped. */
+}
+
+#leftnav a {
+    display: block;
+    padding: 10px 12px;
+    color: #f6f1ee;
+    text-decoration: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: background 0.2s ease, transform 0.2s ease;
+    /* This gives each nav link a clean block style and a soft hover effect. */
+}
+
+#leftnav a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateX(3px);
+    /* A tiny slide effect when the user hovers over a nav link. */
+}
+
+/* This is where the main content sits. */
+main {
+    flex: 1;
+    min-width: 0;
+    background: #f8f5f2;
+    padding: 28px;
+    /* The content area grows to fill the remaining space on the page. */
+}
+
+#right-content-area {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px 22px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    /* This makes the content area feel like a card, which looks more modern. */
+}
+
+/* General heading and paragraph styling. */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c2a2a;
+    margin: 0 0 16px 0;
+    font-weight: 600;
+    /* Keeps headings consistent and easier to read. */
+}
+
+p, li {
+    color: #383838;
+    line-height: 1.7;
+    margin: 0 0 14px 0;
+    font-size: 0.96em;
+    /* Good text spacing makes everything easier on the eyes. */
+}
+
+a {
+    color: #3b3b3b;
+    /* Default link colour that matches the page nicely. */
+}
+
+/* This styles the section for the boxes on the home page. */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 20px;
+    /* This makes the boxes sit in a nice row and wrap onto the next line if needed. */
+}
+
+.box {
+    flex: 1 1 150px;
+    max-width: 170px;
+    height: 170px;
+    object-fit: cover;
+    background: linear-gradient(180deg, #d8b590 0%, #b88d64 100%);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    /* These are the little project/feature tiles. They look like cards and have a nice hover lift. */
+}
+
+.box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.16);
+    filter: brightness(1.05);
+    /* When the mouse goes over a box, it lifts slightly and gets a bit brighter. */
+}
+
+/* This styles the form on the contact page. */
+form {
+    background: #f9f7f4;
+    border: 1px solid #e5ddd5;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 18px;
+    /* The form sits in its own card so it looks neat and separated from the rest of the page. */
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px 12px;
+    border: 1px solid #d7c9bf;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #1d1d1d;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin-top: 6px;
+    /* This makes the inputs look clean and consistent with the same overall theme. */
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    /* This lets the user resize the message area vertically if they need more space. */
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #7d6c63 0%, #5f514d 100%);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+    /* The submit button gets a darker brown theme to match the design. */
+}
+
+input[type="submit"]:hover {
+    opacity: 0.95;
+    /* Slightly dims it when you hover so it feels clickable. */
+}
+
+/* Footer at the bottom of the page. */
+#footer {
+    width: 100%;
+    background: #453d3d;
+    color: #f4f4f4;
+    padding: 18px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    /* This gives the footer a dark bar and clearly separates it from the content above. */
+}
+
+#footer p {
+    margin: 0;
+    color: #f4f4f4;
+    /* Makes the footer text consistent and easy to read. */
+}
+
+/* This is a helper class to clear floats if they are used anywhere. */
+.clear {
+    clear: both;
+}
+
+/* This hides any accidental helper text that might get added to the HTML by mistake. */
+/* Basically, if someone adds a note or placeholder text in the page, it won't show up on the website. */
+.comment,
+.helper-text,
+.instructions,
+.notes,
+.placeholder-text,
+.note,
+.explanation,
+.hidden-text {
+    display: none !important;
+}
+
