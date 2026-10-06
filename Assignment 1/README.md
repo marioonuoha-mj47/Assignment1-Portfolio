@@ -32,7 +32,7 @@ Gradients used in:
 
 #
 Used code from the slides Week1-Week3 
-For the CSS design, half of the code came from the slides from lectures; the other half came from this video. This is the video I watched and implemented things I've learned from it...
+For the CSS design, most of the code came from the slides from lectures; the extra concepts came from this video. This is the video I watched and implemented things I've learned from it...
 https://www.youtube.com/watch?v=wRNinF7YQqQ
 
 #GitHub Pages Link
