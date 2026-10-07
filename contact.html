@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mario Onuoha</title>
+
+    <!-- This links the desktop stylesheet for the contact page. -->
+    <link rel="stylesheet" href="full.css" media="only screen and (min-width: 960px)">
+
+    <!-- This links the tablet stylesheet for medium-sized screens. -->
+    <link rel="stylesheet" href="tablet.css" media="only screen and (min-width: 481px) and (max-width: 959px)">
+
+    <!-- This links the mobile stylesheet for smaller screens. -->
+    <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 480px)">
+</head>
+
+<body>
+    <!-- Main page wrapper for the site layout. -->
+    <div id="wrapper">
+
+        <!-- Header for the contact page title. -->
+        <header id="banner">
+            <h1>Contact Mario Onuoha</h1>
+        </header>
+
+        <!-- Side nav menu with the page links. -->
+        <nav id="leftnav" aria-label="Main navigation">
+            <h3>Links...</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content area for the contact form. -->
+        <main>
+            <article id="right-content-area">
+                <h2>Contact Me</h2>
+                <p>If you would like to get in touch with me, please fill out the form below or reach out to me via email.</p>
+
+                <!-- This is the form that the user will fill in to send a message. -->
+                <form action="mailto:mario.onuoha@ontariotechu.net" method="post">
+                    <p>
+                        Name:<br>
+                        <input type="text" name="name" required>
+                    </p>
+
+                    <p>
+                        Email:<br>
+                        <input type="email" name="email" required>
+                    </p>
+
+                    <p>
+                        Phone:<br>
+                        <input type="tel" name="phone" required>
+                    </p>
+
+                    <p>
+                        Comments:<br>
+                        <textarea name="comments" rows="5" cols="30" required></textarea>
+                    </p>
+
+                    <p>
+                        Anti-Bot question: What is 2 + 2?<br>
+                        <input type="text" name="bot_check" required>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </form>
+            </article>
+        </main>
+
+        <!-- Clears layout floats before the footer. -->
+        <div class="clear"></div>
+
+        <!-- Bottom footer bar. -->
+        <footer id="footer">
+            <p>Copyright &copy; 2026 Mario's Portfolio</p>
+        </footer>
+    </div>
+</body>
+</html>
